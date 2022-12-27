@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&display=swap');
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(to right, #feac5e, #c779d0, #4bc0c8);
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: inherit;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  font-family: 'Chakra Petch', sans-serif;
+  font-weight: normal;
+}
+
+.wrapper {
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.01);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  background: rgba(255, 255, 255, 0.30);
+  border: 1px solid rgba(255, 255, 255, 0.34);
+  flex-basis: 400px;
+  height: 740px;
+  padding: 0 35px 0 35px;
+}
+
+.calculator-grid {
+  display: grid;
+  gap: 10px;
+  justify-content: center;
+  align-content: center;
+  height: 46rem;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+.calculator-grid button {
+  cursor: pointer;
+  font-size: 2rem;
+  border: 1px solid white;
+  border-radius: 12px;
+  outline: none;
+  background-color: rgba(255, 255, 255, .75);
+}
+
+.display {
+  font-size: 2rem;
+  border: 1px solid white;
+  border-radius: 12px;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.706);
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  padding-right: 10px;
+  min-height: 5.4rem;
+}
+
+.output {
+  grid-column: span 4;
+  justify-content: space-around;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.output .previous-operand {
+  color: rgba(0, 0, 0, 0.50);
+  font-size: 1.5rem;
+}
+
+.output .current-operand {
+  color: rgb(000, 000, 000);
+  font-size: 2.5rem;
+}
+
+.calculator-grid button:hover {
+  background-color: #f5fbfc;
+}
+
+.span-two {
+  grid-column: span 2;
+}
+
+.color-symbols {
+  background-color: #90d2d8 !important;
+}
+
+.color-symbols:hover {
+  background-color: #64c0c9 !important;
+}
