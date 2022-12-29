@@ -1,2 +1,2 @@
 # calculatorJS
-Calculator made in javascript for study purposes.
+Simple calculator made in javascript with a simple and beutiful design.
